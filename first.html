@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Width Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            background-color: #FFEFCD;
+        }
+        .full-width-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+
+        .button-next {
+            width: 25%;
+            height: auto;
+            cursor: pointer; /* Add cursor pointer to indicate clickable */
+        }
+
+        .content {
+            padding-left: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid orange; /* Adjust the border style */
+        }
+
+        @keyframes typewriter {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .typewriter {
+            animation: typewriter 3s steps(40) infinite;
+        }
+
+        .image-placeholder {
+            display: block;
+            width: 100%;
+            height: auto;
+            background-color: #ccc; /* Placeholder color */
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="1.png" alt="Full Width Image" class="full-width-image" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Image not found';">
+    <div class="button">
+        <img src="Next.png" alt="buttons" class="button-next" onclick="redirectToLogin()">
+    </div>
+    <img src="2.png" alt="Full Width Image" class="full-width-image" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Image not found';">
+    <img src="3.png" alt="Full Width Image" class="full-width-image" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Image not found';">
+    <img src="contact.png" alt="Full Width Image" class="full-width-image" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Image not found';">
+    <div class="content typewriter">
+        <p>All Rights Reserved © 2024 | SH OFFICIAL</p>
+        <!-- Add more content here to demonstrate scrolling -->
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'https://shakespearechabungbam.github.io/Login/';
+        }
+    </script>
+</body>
+</html>
